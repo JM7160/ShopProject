@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STARSHIPSQUARE > IVE</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            color: black;
+            text-align: center;
+            padding: 1em;
+            cursor: pointer;
+            transition: height 0.7s ease-out; 
+            overflow: hidden; 
+        }
+
+        header:hover {
+            height: 400px;
+        }
+
+        h1:hover img {
+            transform: translateY(10px);
+        }
+
+        h1 span {
+            display: none;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        h1:hover span {
+            display: block;
+        }
+
+        section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 2em;
+        }
+
+        .product {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin: 1em;
+            padding: 1em;
+            width: 200px;
+            transition: all 0.3s ease;
+        }
+
+        .product:hover {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+            bottom: 0;
+            width: 100%;
+        }
+        a {
+            text-decoration: none;
+            color: black;
+        }  
+        h4{
+            text-align: right;
+        } 
+    </style>
+</head>
+<body>
+    <header id="mainHeader">
+        <h4>
+        <p><a href="Login.html">login</a></p>
+        </h4>
+        <h1>
+            <p><a href= "STARSHIP MAIN.html">STARSHIP SQUARE</a></p>
+            <span>
+                <h1>
+                    <p>ARTIST</p>
+                </h1>
+                <h2>
+                    <p><a href="IVE.html">IVE</a></p>
+                    <p><a href="CRAVITY.html">CRAVITY</a></p>
+                    <p><a href="MONSTA X.html">MONSTA X</a></p>
+                    <p><a href="WJSN.html">WJSN</a></p>
+                </h2>
+            </span>
+        </h1>
+    </header>
+    <section>
+        <img src="image/artist_top_ive.jpg">
+        <div class="product">
+            <img src="image/0010100000772.jpg" width="200" height="200">
+            <h2>IVE 2024 SEASON'S GREETINGS : A Fairy's Wish</h2>
+            <p>[예약판매] 12월 28일 (목)부터 순차발송 예정</p>
+            <p>35,000원</p>
+            <button>장바구니에 담기</button>
+        </div>
+
+        <div class="product">
+            <img src="image/0030130005042.jpg" width="200" height="200">
+            <h2>(VER SET) IVE THE 1st EP I'VE MINE</h2>
+            <p>※ 아이브 1st EP 앨범 (기본 3종 + LOVED IVE ver.) 4종 세트</p>
+            <p>60,000원</p>
+            <button>장바구니에 담기</button>
+        </div>
+
+        <div class="product">
+            <img src="image/0030130004522.jpg" width="200" height="200">
+            <h2>(SPECIAL VER.) IVE THE 1ST ALBUM I've IVE</h2>
+
+            <p>20,000원</p>
+            <button>장바구니에 담기</button>
+        </div>
+
+        <div class="product">
+            <img src="image/0030130004452.jpg" width="200" height="200">
+            <h2>(VER SET) IVE THE 1ST ALBUM I've IVE</h2>
+            <p>※ 아이브 정규 1집 기본앨범 3종 세트</p>
+            <p>50,000원</p>
+            <button>장바구니에 담기</button>
+        </div>
+
+        <div class="product">
+            <img src="image/0010100000792.jpg" width="200" height="200">
+            <h2>IVE 캐릭터 MD 미니브 크리스마스 플러시 인형</h2>
+            <p>※ 12월 5일(화)부터 순차발송 예정</p>
+            <p>※ 옵션별 각 2EA 구매 한정</p>
+            <p>20,000원</p>
+            <button>장바구니에 담기</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; STARSHIP</p>
+    </footer>
+    <script>
+        function resetHeaderHeight() {
+            document.getElementById('mainHeader').style.height = '';
+        }
+        document.getElementById('mainHeader').addEventListener('mouseleave', resetHeaderHeight);
+    </script>
+</body>
+</html>
